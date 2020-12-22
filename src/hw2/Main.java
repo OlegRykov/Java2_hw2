@@ -28,8 +28,6 @@ public class Main {
 
     public static void diArr(String[][] arr) throws MyArraySizeException {
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-            }
             if (arr.length != 4 || arr[i].length != 4){
                 throw new MyArraySizeException("Размер двумерного массива должен быть 4х4.");
             }
@@ -42,7 +40,6 @@ public class Main {
             y = i;
             for (int j = 0; j < arr[i].length; j++) {
                 x = j;
-                Integer.parseInt(arr[i][j]);
                 sum = Integer.parseInt(arr[i][j]) + sum;
             }
         }
